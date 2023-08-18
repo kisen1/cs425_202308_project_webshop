@@ -1,0 +1,9 @@
+.reviewForm{
+    width: 25%;
+    margin: 3% 4%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}

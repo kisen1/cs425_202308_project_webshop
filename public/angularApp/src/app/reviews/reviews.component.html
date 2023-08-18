@@ -1,0 +1,13 @@
+<div *ngFor="let review of _reviews">
+    <h6><a routerLink="/product/{{_prdouctId}}/reviews/{{review._id}}">{{review.title}}</a>   <span class="ratingStar">
+        <i [class]="setStarsClass(review.rating, 1)"></i>
+        <i [class]="setStarsClass(review.rating, 2)"></i>
+        <i [class]="setStarsClass(review.rating, 3)"></i>
+        <i [class]="setStarsClass(review.rating, 4)"></i>
+    </span>  ({{review.rating | number: '1.1-1'}})</h6>
+    <p>{{review.description}}</p>
+</div>
+<div class="pagination">
+    <button (click)="previous()" [disabled]="_offset==0" type="button" class="btn btn-outline-dark ">Privous</button>
+    <button (click)="next()" [disabled]="!hasMore" type="button" class="btn btn-outline-dark ">Next</button>
+</div>

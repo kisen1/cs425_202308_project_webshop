@@ -1,0 +1,8 @@
+.ratingStar{
+    color: yellow;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-around;
+}
