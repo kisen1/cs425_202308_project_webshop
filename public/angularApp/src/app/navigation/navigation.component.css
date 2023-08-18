@@ -1,0 +1,15 @@
+
+.btn{
+    width: 90px;
+}
+
+.space-between{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+.space-around{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+}

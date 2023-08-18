@@ -1,5 +1,22 @@
 node_modules
 
 
-public/angularApp/src
+public/angularApp/src/app/add-product
+public/angularApp/src/app/error
+public/angularApp/src/app/add-review
+public/angularApp/src/app/header
+public/angularApp/src/app/login
+public/angularApp/src/app/products
+public/angularApp/src/app/profile
+public/angularApp/src/app/register
+public/angularApp/src/app/reviews
+public/angularApp/src/app/single-product
+public/angularApp/src/app/single-review
+public/angularApp/src/app/update-product
+public/angularApp/src/app/authentication-intercepter.interceptor.ts
+public/angularApp/src/app/authentication.service.ts
+public/angularApp/src/app/products-data.service.ts
+public/angularApp/src/app/review-data.service.ts
+public/angularApp/src/app/user-data.service.ts
+
 
