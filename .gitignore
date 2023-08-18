@@ -2,8 +2,6 @@ node_modules
 
 
 public/angularApp/src/app/error
-public/angularApp/src/app/login
 public/angularApp/src/app/profile
-public/angularApp/src/app/user-data.service.ts
 
 
