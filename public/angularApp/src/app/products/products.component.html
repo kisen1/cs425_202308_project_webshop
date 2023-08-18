@@ -1,0 +1,21 @@
+<form [formGroup]="_searchFormGroup" class="form-inline my-2 my-lg-0" (ngSubmit)="search()">
+    <input formControlName="productName" class="form-control mr-sm-2" type="search" placeholder="Product Name"
+        aria-label="Search">
+    <button [disabled]="!_searchFormGroup.valid" class="btn btn-outline-dark " type="submit">Search</button>
+</form>
+
+<mat-grid-list class="productGird" cols="3" rowHeight="3:1">
+    <mat-grid-tile *ngFor="let product of _products">
+        <a  routerLink="/product/{{product._id}}">
+            <div class="girdContent">
+                <img class="productImage" src="{{product.img}}" />
+                <p> {{product.name}} {{product.price | currency:"$"}}</p>
+            </div>
+        </a>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<div class="pagination">
+    <button (click)="previous()" [disabled]="_offset==0" type="button" class="btn btn-outline-dark ">Privous</button>
+    <button (click)="next()" [disabled]="!_hasMore" type="button" class="btn btn-outline-dark ">Next</button>
+</div>

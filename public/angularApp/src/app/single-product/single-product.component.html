@@ -1,0 +1,35 @@
+<div class="singleProduct">
+    <div class="rows">
+
+        <div class="columns bigWidth">
+            <img src="{{_product.img}}">
+        </div>
+        
+        <div class="columns ">
+            <div >
+                <h1>{{_product.name}}</h1>
+                <p>{{_product.price | currency: '$'}}</p>
+            </div>
+            <br>
+            <app-reviews [_prdouctId]="_product._id"></app-reviews>
+        </div>
+    
+        <div class="columns ">
+            <div  class="buttons">
+                <button (click)="goToEdit()" type="button" class="btn btn-outline-success mr-4">Edit</button>
+                <button (click)="delete()" type="button" class="btn btn-outline-danger">Delete</button>
+                <div *ngIf="showAlert" class="alert alert-danger" role="alert">
+                    You need to login first!
+                </div>
+            </div>
+            <app-add-review [_productId]="_product._id"></app-add-review>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+
+
+

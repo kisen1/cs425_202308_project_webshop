@@ -1,0 +1,13 @@
+form{
+    width: 25%;
+    position:absolute;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+div{
+    position: relative;
+}
+
+button{
+    width: 30%;
+}
