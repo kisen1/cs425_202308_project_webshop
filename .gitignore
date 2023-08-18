@@ -1,11 +1,5 @@
 node_modules
 
 
-public
+public/angularApp/src
 
-.env
-app.js
-nodemon.json
-package-lock.json
-package.json
-README.md

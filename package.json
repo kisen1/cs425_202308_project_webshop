@@ -1,0 +1,33 @@
+{
+  "name": "e-commerce_mean_app",
+  "version": "1.0.0",
+  "description": "MEAN e-commerce website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haileab-TG/E-Commerce_MEAN_APP.git"
+  },
+  "keywords": [
+    "NODE",
+    "EXPRESS",
+    "MONGOOSE",
+    "ANGULAR"
+  ],
+  "author": "Haileab Goitum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haileab-TG/E-Commerce_MEAN_APP/issues"
+  },
+  "homepage": "https://github.com/Haileab-TG/E-Commerce_MEAN_APP#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.0"
+  }
+}
