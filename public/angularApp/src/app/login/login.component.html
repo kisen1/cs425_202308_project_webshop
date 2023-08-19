@@ -6,7 +6,7 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Sign in</h2>
+              <h2 class=" text-center mb-5">Sign in</h2>
               <div *ngIf="showSuccessAlert" class="alert alert-success" role="alert">
                 Login Successful
               </div>
@@ -29,12 +29,19 @@
 
                 <div *ngIf="showLoginBtn" class="d-flex justify-content-center">
                   <button type="submit" [disabled]="!loginFormGroup.valid"
-                    class="btn btn btn-outline-dark btn-lg  text-body">Login</button>
+                    class="btn btn btn-outline-dark btn-lg  text-body">Sign In</button>
                 </div>
+                <br>
+                <div>
+                  <p class=" text-center text-muted mt-5 mb-0" >By continuing, you agree to WebShop's 
+                    <a routerLink="/standards" class="fw-bold text-body"><u> Conditions of Use</u></a> and
+                    <a routerLink="/privacy" class="fw-bold text-body"><u>Privacy Notice</u></a>.
+                  </p>
+                </div>
+                <hr>
 
-
-                <p class=" text-center text-muted mt-5 mb-0">Sign up instead? <a routerLink="/register"
-                    class="fw-bold text-body"><u>Sign up</u></a></p>
+                <p class=" text-center text-muted mt-5 mb-0">New to WebShop? <br><a routerLink="/register" 
+                    class="fw-bold text-body"><u>Create your WebShop account </u></a></p>
 
               </form>
 

@@ -6,7 +6,7 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+              <h2 class=" text-center mb-5">Create account</h2>
 
               <form [formGroup]="registerFormGroup" (ngSubmit)="register()">
 
@@ -27,15 +27,21 @@
 
                 <div class="form-outline mb-4">
                   <input formControlName="repeatPassowrd" type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                  <label class="form-label" for="form3Example4cdg">Re-enter password</label>
                 </div>
                 <div *ngIf="showSignUpBtn" class="d-flex justify-content-center">
                   <button type="submit" [disabled]="!registerFormGroup.valid"
                     class="btn btn btn-outline-dark btn-lg  text-body">Sign Up</button>
+                </div>                
+                <div>
+                  <p class=" text-center text-muted mt-5 mb-0" >By creating an account, you agree to WebShop's 
+                    <a routerLink="/standards" class="fw-bold text-body"><u> Conditions of Use</u></a> and
+                     <a routerLink="/privacy" class="fw-bold text-body"><u>Privacy Notice</u></a>.</p>
                 </div>
+                <hr>
 
-                <p class=" text-center text-muted mt-5 mb-0">Have already an account? <a routerLink="/login"
-                    class="fw-bold text-body"><u>Login here</u></a></p>
+                <p class=" text-center text-muted mt-5 mb-0"> Already have an account? <a routerLink="/login"
+                    class="fw-bold text-body"><u>Sign in</u></a></p>
 
               </form>
 

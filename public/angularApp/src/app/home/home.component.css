@@ -1,21 +1,65 @@
 .welcome{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Nyala;
+    text-align: center;
     font-size: 5em;
     font-style: italic;
-    color: green;
-    padding: 30px 0%;
+    color: rgb(14, 78, 30);
+    padding: .3em 0%;
 }
 
 .home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* object-fit: fil100% */
+    opacity: 65%;
+    margin-left: .1em;
+    margin-top: -1px;
+    margin-bottom: -1em;
+    width: 70em;
+    border-radius: 2em;
+   
 }
 
-.home > img {
-    min-width: 100%;
+.para {
+    font-size: .9em;
+    background-color: rgb(213, 235, 234);
+    border: 2px solid rgb(197, 193, 193);
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+    vertical-align: baseline;
+    margin: 20pt auto auto ;
+  }
+
+.comment1 {
+width: 20%;
+float: right;
+margin-right: .5em;
 }
 
+.hrr {
+    border: 2px solid rgb(150, 108, 56);
+    /* margin-left: -9px; */
+    /* margin-right: 4px; */
+    margin-bottom: -.05em;
+    }
+
+.footBanner{
+    /* margin-left:-9px; */
+    background-color: rgb(185, 170, 104) ;
+    }
+
+.homePage {
+    margin:1em;
+    color: rgb(118, 105, 203);
+    text-decoration: none;
+    } 
+
+.jumpTop{   
+    border: 2px solid rgb(156, 120, 120);
+    border-radius: 8px;
+    margin-left: 1em;
+    text-decoration: none;
+    }
+
+.val{
+    text-align: center;
+    opacity: 65%;
+    }
